@@ -139,6 +139,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colFirst" scope="row"><a href="#com.ibm.dtfj.phd">com.ibm.dtfj.phd</a></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.ibm.j9ddr.view.dtfj">com.ibm.j9ddr.view.dtfj</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.ibm.j9ddr.view.dtfj.image">com.ibm.j9ddr.view.dtfj.image</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<th class="colFirst" scope="row"><a href="#com.ibm.j9ddr.view.dtfj.java.helper">com.ibm.j9ddr.view.dtfj.java.helper</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colFirst" scope="row"><a href="#com.ibm.j9ddr.vm29.view.dtfj.java">com.ibm.j9ddr.vm29.view.dtfj.java</a></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -753,6 +769,188 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </table>
 </section>
 </li>
+<li class="blockList">
+<section role="region"><a id="com.ibm.j9ddr.view.dtfj">
+<!--   -->
+</a>
+<h3>Uses of <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a> in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a> that return <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRDTFJUtils.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsDataUnavailable(java.lang.Throwable)">handleAsDataUnavailable</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink" target="_blank">Throwable</a>&nbsp;t)</code></th>
+<td class="colLast">
+<div class="block">Handle the supplied error condition and ultimately surface it as a
+ data unavailable exception.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a> that throw <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRDTFJUtils.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAllButDataUnavailAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+                                             <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink" target="_blank">Throwable</a>&nbsp;t)</code></th>
+<td class="colLast">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is not a DataUnavailable.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRDTFJUtils.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButMemAccExAndDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAllButMemAccExAndDataUnavailAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+                                                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink" target="_blank">Throwable</a>&nbsp;t,
+                                                        <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink" target="_blank">Class</a>&lt;?&gt;[]&nbsp;allowlist)</code></th>
+<td class="colLast">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is neither MemoryAccessException or DataUnavailable.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.ibm.j9ddr.view.dtfj.image">
+<!--   -->
+</a>
+<h3>Uses of <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a> in <a href="../../../j9ddr/view/dtfj/image/package-summary.html">com.ibm.j9ddr.view.dtfj.image</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../j9ddr/view/dtfj/image/package-summary.html">com.ibm.j9ddr.view.dtfj.image</a> that throw <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink" target="_blank">String</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRImageProcess.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getCommandLine()">getCommandLine</a></span>()</code></th>
+<td class="colLast">
+<div class="block">This method tries to get command line of the program that generated core file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRImage.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getCreationTime()">getCreationTime</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return the dump creation time.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRImage.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getCreationTimeNanos()">getCreationTimeNanos</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return the value of the system nanotime (high resolution timer) at dump creation time.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink" target="_blank">Properties</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9DDRImageProcess.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getEnvironment()">getEnvironment</a></span>()</code></th>
+<td class="colLast">
+<div class="block">This method gets the environment variables.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9RASImageDataFactory.ProcessData.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9RASImageDataFactory.ProcessData.html#pid()">pid</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">J9RASImageDataFactory.ProcessData.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/image/J9RASImageDataFactory.ProcessData.html#tid()">tid</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.ibm.j9ddr.view.dtfj.java.helper">
+<!--   -->
+</a>
+<h3>Uses of <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a> in <a href="../../../j9ddr/view/dtfj/java/helper/package-summary.html">com.ibm.j9ddr.view.dtfj.java.helper</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../j9ddr/view/dtfj/java/helper/package-summary.html">com.ibm.j9ddr.view.dtfj.java.helper</a> that throw <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaClassHelper.</span><code><span class="memberNameLink"><a href="../../../j9ddr/view/dtfj/java/helper/DTFJJavaClassHelper.html#getProtectionDomain(com.ibm.dtfj.java.JavaClass)">getProtectionDomain</a></span>&#8203;(<a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a>&nbsp;clazz)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
+<li class="blockList">
+<section role="region"><a id="com.ibm.j9ddr.vm29.view.dtfj.java">
+<!--   -->
+</a>
+<h3>Uses of <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a> in <a href="../../../j9ddr/vm29/view/dtfj/java/package-summary.html">com.ibm.j9ddr.vm29.view.dtfj.java</a></h3>
+<table class="useSummary">
+<caption><span>Methods in <a href="../../../j9ddr/vm29/view/dtfj/java/package-summary.html">com.ibm.j9ddr.vm29.view.dtfj.java</a> that throw <a href="../DataUnavailable.html" title="class in com.ibm.dtfj.image">DataUnavailable</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaRuntime.</span><code><span class="memberNameLink"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getNestedPackedArrayObject(com.ibm.dtfj.java.JavaClass,com.ibm.dtfj.image.ImagePointer,int)">getNestedPackedArrayObject</a></span>&#8203;(<a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a>&nbsp;jc,
+                          <a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a>&nbsp;i,
+                          int&nbsp;arrayLength)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaRuntime.</span><code><span class="memberNameLink"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getNestedPackedObject(com.ibm.dtfj.java.JavaClass,com.ibm.dtfj.image.ImagePointer)">getNestedPackedObject</a></span>&#8203;(<a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a>&nbsp;jc,
+                     <a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a>&nbsp;packedDataAddress)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaClass.</span><code><span class="memberNameLink"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getPackedDataSize()">getPackedDataSize</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaRuntime.</span><code><span class="memberNameLink"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getStartTime()">getStartTime</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return the JVM start time.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><span class="typeNameLabel">DTFJJavaRuntime.</span><code><span class="memberNameLink"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getStartTimeNanos()">getStartTimeNanos</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return the value of the system nanotime (high resolution timer) at JVM start.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</li>
 </ul>
 </li>
 </ul>
@@ -805,7 +1003,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
+<p class="legalCopy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse-openj9/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
 </footer>
 </body>
 </html>

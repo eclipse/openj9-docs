@@ -84,6 +84,18 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Classes to support managed runtime instances.</div>
 </div>
+<div class="col-first odd-row-color"><a href="#com.ibm.j9ddr.view.dtfj">com.ibm.j9ddr.view.dtfj</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#com.ibm.j9ddr.view.dtfj.image">com.ibm.j9ddr.view.dtfj.image</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#com.ibm.j9ddr.view.dtfj.java">com.ibm.j9ddr.view.dtfj.java</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#com.ibm.j9ddr.view.dtfj.java.helper">com.ibm.j9ddr.view.dtfj.java.helper</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#com.ibm.j9ddr.view.nativert">com.ibm.j9ddr.view.nativert</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#com.ibm.j9ddr.vm29.view.dtfj.java">com.ibm.j9ddr.vm29.view.dtfj.java</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><a href="#com.ibm.java.diagnostics.utils">com.ibm.java.diagnostics.utils</a></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><a href="#com.ibm.jvm.dtfjview.commands.helpers">com.ibm.jvm.dtfjview.commands.helpers</a></div>
@@ -1606,6 +1618,573 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="com.ibm.j9ddr.view.dtfj">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a></h2>
+<div class="caption"><span>Subclasses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/DTFJCorruptDataException.html" title="class in com.ibm.j9ddr.view.dtfj">DTFJCorruptDataException</a></span></code></div>
+<div class="col-last even-row-color">
+<div class="block">J9DDR CorruptDataException that can take a cause for improved debugging.</div>
+</div>
+</div>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/view/dtfj/package-summary.html">com.ibm.j9ddr.view.dtfj</a> that return <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAllButDataUnavailAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link" target="_blank">Throwable</a>&nbsp;t)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is not a DataUnavailable.</div>
+</div>
+<div class="col-first odd-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButMemAccExAndDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAllButMemAccExAndDataUnavailAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link" target="_blank">Throwable</a>&nbsp;t,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link" target="_blank">Class</a>&lt;?&gt;[]&nbsp;allowlist)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is neither MemoryAccessException or DataUnavailable.</div>
+</div>
+<div class="col-first even-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButMemAccExAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAllButMemAccExAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link" target="_blank">Throwable</a>&nbsp;t,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link" target="_blank">Class</a>&lt;?&gt;[]&nbsp;allowlist)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is not a MemoryAccessException.</div>
+</div>
+<div class="col-first odd-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link" target="_blank">Throwable</a>&nbsp;t)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Convert the supplied error condition into a corrupt data exception 
+ or re-throw it if it is an instance of Error that we do not want to 
+ intercept.</div>
+</div>
+<div class="col-first even-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAsCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;p,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link" target="_blank">Throwable</a>&nbsp;t,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link" target="_blank">Class</a>&lt;?&gt;[]&nbsp;allowlist)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list.</div>
+</div>
+<div class="col-first odd-row-color"><code>static <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRDTFJUtils.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/J9DDRDTFJUtils.html#newCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,com.ibm.j9ddr.CorruptDataException)">newCorruptDataException</a></span>&#8203;(<a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;process,
+ <a href="../../../j9ddr/CorruptDataException.html" title="class in com.ibm.j9ddr">CorruptDataException</a>&nbsp;e)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Convert a j9ddr corrupt data exception into a DTFJ corrupt data exception</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="com.ibm.j9ddr.view.dtfj.image">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/dtfj/image/package-summary.html">com.ibm.j9ddr.view.dtfj.image</a></h2>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/view/dtfj/image/package-summary.html">com.ibm.j9ddr.view.dtfj.image</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageStackFrame.html#getBasePointer()">getBasePointer</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>byte</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getByteAt(long)">getByteAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getCommandLine()">getCommandLine</a></span>()</code></div>
+<div class="col-last even-row-color">
+<div class="block">This method tries to get command line of the program that generated core file.</div>
+</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getCreationTimeNanos()">getCreationTimeNanos</a></span>()</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Return the value of the system nanotime (high resolution timer) at dump creation time.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="../ImageThread.html" title="interface in com.ibm.dtfj.image">ImageThread</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getCurrentThread()">getCurrentThread</a></span>()</code></div>
+<div class="col-last even-row-color">
+<div class="block">This method returns the ImageThread that matches the TID stored in the J9RAS data structure,
+  or
+  case 1: if no J9RAS structure available return null
+  case 2: if J9RAS structure available but no TID field (old JVMs, old jextract behaviour) 
+                - return the first thread, or null if no threads
+  case 3: if J9RAS structure available with TID field but TID is zero (eg dump triggered outside JVM)
+                - platform specific code if core readers have identified a current thread, else...</div>
+</div>
+<div class="col-first odd-row-color"><code>double</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getDoubleAt(long)">getDoubleAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link" target="_blank">Properties</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getEnvironment()">getEnvironment</a></span>()</code></div>
+<div class="col-last even-row-color">
+<div class="block">This method gets the environment variables.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="../ImageModule.html" title="interface in com.ibm.dtfj.image">ImageModule</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getExecutable()">getExecutable</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>float</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getFloatAt(long)">getFloatAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getHostName()">getHostName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRBaseImageThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRBaseImageThread.html#getID()">getID</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getID()">getID</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getIntAt(long)">getIntAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link" target="_blank">Iterator</a>&lt;?&gt;</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getLibraries()">getLibraries</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getLongAt(long)">getLongAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageModule.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageModule.html#getName()">getName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getPointerAt(long)">getPointerAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageStackFrame.html#getProcedureAddress()">getProcedureAddress</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageStackFrame.html#getProcedureName()">getProcedureName</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getProcessorSubType()">getProcessorSubType</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getProcessorType()">getProcessorType</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link" target="_blank">Properties</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageModule.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageModule.html#getProperties()">getProperties</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>short</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImagePointer.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImagePointer.html#getShortAt(long)">getShortAt</a></span>&#8203;(long&nbsp;index)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getSignalName()">getSignalName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImageProcess.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageProcess.html#getSignalNumber()">getSignalNumber</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getSystemSubType()">getSystemSubType</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">J9DDRImage.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImage.html#getSystemType()">getSystemType</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link" target="_blank">Number</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">J9DDRImageRegister.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/image/J9DDRImageRegister.html#getValue()">getValue</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="com.ibm.j9ddr.view.dtfj.java">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/dtfj/java/package-summary.html">com.ibm.j9ddr.view.dtfj.java</a></h2>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/view/dtfj/java/package-summary.html">com.ibm.j9ddr.view.dtfj.java</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">IDTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/java/IDTFJJavaField.html#getSignature()">getSignature</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="com.ibm.j9ddr.view.dtfj.java.helper">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/dtfj/java/helper/package-summary.html">com.ibm.j9ddr.view.dtfj.java.helper</a></h2>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/view/dtfj/java/helper/package-summary.html">com.ibm.j9ddr.view.dtfj.java.helper</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static boolean</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldHelper.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/java/helper/DTFJJavaFieldHelper.html#fieldIsString(com.ibm.j9ddr.view.dtfj.java.IDTFJJavaField)">fieldIsString</a></span>&#8203;(<a href="../../../j9ddr/view/dtfj/java/IDTFJJavaField.html" title="interface in com.ibm.j9ddr.view.dtfj.java">IDTFJJavaField</a>&nbsp;field)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Test whether the given field is a string,  
+ returning true or false according to whether the field signature matches that of a string.</div>
+</div>
+<div class="col-first odd-row-color"><code>static <a href="../../java/JavaField.html" title="interface in com.ibm.dtfj.java">JavaField</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaClassHelper.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/java/helper/DTFJJavaClassHelper.html#getField(com.ibm.dtfj.java.JavaClass,java.lang.String)">getField</a></span>&#8203;(<a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a>&nbsp;clazz,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a>&nbsp;name)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static <a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClassHelper.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/java/helper/DTFJJavaClassHelper.html#getProtectionDomain(com.ibm.dtfj.java.JavaClass)">getProtectionDomain</a></span>&#8203;(<a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a>&nbsp;clazz)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntimeHelper.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/dtfj/java/helper/DTFJJavaRuntimeHelper.html#getTotalHeapSize(com.ibm.dtfj.java.JavaRuntime,com.ibm.j9ddr.corereaders.memory.IProcess)">getTotalHeapSize</a></span>&#8203;(<a href="../../java/JavaRuntime.html" title="interface in com.ibm.dtfj.java">JavaRuntime</a>&nbsp;runtime,
+ <a href="../../../j9ddr/corereaders/memory/IProcess.html" title="interface in com.ibm.j9ddr.corereaders.memory">IProcess</a>&nbsp;process)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="com.ibm.j9ddr.view.nativert">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/view/nativert/package-summary.html">com.ibm.j9ddr.view.nativert</a></h2>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/view/nativert/package-summary.html">com.ibm.j9ddr.view.nativert</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">NativeRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/nativert/NativeRuntime.html#getFullVersion()">getFullVersion</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">NativeRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/view/nativert/NativeRuntime.html#getVersion()">getVersion</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="com.ibm.j9ddr.vm29.view.dtfj.java">
+<h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../j9ddr/vm29/view/dtfj/java/package-summary.html">com.ibm.j9ddr.vm29.view.dtfj.java</a></h2>
+<div class="caption"><span>Methods in <a href="../../../j9ddr/vm29/view/dtfj/java/package-summary.html">com.ibm.j9ddr.vm29.view.dtfj.java</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>void</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#arraycopy(int,java.lang.Object,int,int)">arraycopy</a></span>&#8203;(int&nbsp;srcStart,
+ <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a>&nbsp;dst,
+ int&nbsp;dstStart,
+ int&nbsp;length)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#checkDataTypeConversion(com.ibm.j9ddr.vm29.view.dtfj.java.DTFJJavaObject,int)">checkDataTypeConversion</a></span>&#8203;(<a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html" title="class in com.ibm.j9ddr.vm29.view.dtfj.java">DTFJJavaObject</a>&nbsp;object,
+ int&nbsp;mask)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClassloader.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClassloader.html#findClass(java.lang.String)">findClass</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a>&nbsp;name)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#get(com.ibm.dtfj.java.JavaObject)">get</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#get(com.ibm.dtfj.java.JavaObject)">get</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getAddress()">getAddress</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJGenericJavaRuntimeMemorySection.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJGenericJavaRuntimeMemorySection.html#getAllocator()">getAllocator</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJMemoryTagRuntimeMemorySection.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJMemoryTagRuntimeMemorySection.html#getAllocator()">getAllocator</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getArraySize()">getArraySize</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getBasePointer()">getBasePointer</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getBlockingObject()">getBlockingObject</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>boolean</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getBoolean(com.ibm.dtfj.java.JavaObject)">getBoolean</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getBoolean(com.ibm.dtfj.java.JavaObject)">getBoolean</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>byte</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getByte(com.ibm.dtfj.java.JavaObject)">getByte</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>byte</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getByte(com.ibm.dtfj.java.JavaObject)">getByte</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>char</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getChar(com.ibm.dtfj.java.JavaObject)">getChar</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>char</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getChar(com.ibm.dtfj.java.JavaObject)">getChar</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link" target="_blank">Iterator</a>&lt;?&gt;</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getChildren()">getChildren</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaClassLoader.html" title="interface in com.ibm.dtfj.java">JavaClassLoader</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getClassLoader()">getClassLoader</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getCompilationLevel()">getCompilationLevel</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getComponentType()">getComponentType</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#getDeclaringClass()">getDeclaringClass</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaMethod.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaMethod.html#getDeclaringClass()">getDeclaringClass</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getDeepAllocations()">getDeepAllocations</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getDeepBytes()">getDeepBytes</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>double</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getDouble(com.ibm.dtfj.java.JavaObject)">getDouble</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>double</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getDouble(com.ibm.dtfj.java.JavaObject)">getDouble</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaVMOption.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaVMOption.html#getExtraInfo()">getExtraInfo</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getFilename()">getFilename</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaMethod.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaMethod.html#getFilename()">getFilename</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getFilename()">getFilename</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>float</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getFloat(com.ibm.dtfj.java.JavaObject)">getFloat</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>float</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getFloat(com.ibm.dtfj.java.JavaObject)">getFloat</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getFullVersion()">getFullVersion</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getHashcode()">getHashcode</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaHeap.html" title="interface in com.ibm.dtfj.java">JavaHeap</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getHeap()">getHeap</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaVMInitArgs.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaVMInitArgs.html#getIgnoreUnrecognized()">getIgnoreUnrecognized</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImageThread.html" title="interface in com.ibm.dtfj.image">ImageThread</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getImageThread()">getImageThread</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getInstanceSize()">getInstanceSize</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getInt(com.ibm.dtfj.java.JavaObject)">getInt</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getInt(com.ibm.dtfj.java.JavaObject)">getInt</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getJavaClass()">getJavaClass</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getJavaVM()">getJavaVM</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaVMInitArgs.html" title="interface in com.ibm.dtfj.java">JavaVMInitArgs</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getJavaVMInitArgs()">getJavaVMInitArgs</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link" target="_blank">Properties</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getJITProperties()">getJITProperties</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getJNIEnv()">getJNIEnv</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getLineNumber()">getLineNumber</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaLocation.html" title="interface in com.ibm.dtfj.java">JavaLocation</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getLocation()">getLocation</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getLong(com.ibm.dtfj.java.JavaObject)">getLong</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getLong(com.ibm.dtfj.java.JavaObject)">getLong</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaRuntimeMemoryCategory.html" title="interface in com.ibm.dtfj.java">JavaRuntimeMemoryCategory</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJGenericJavaRuntimeMemorySection.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJGenericJavaRuntimeMemorySection.html#getMemoryCategory()">getMemoryCategory</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaRuntimeMemoryCategory.html" title="interface in com.ibm.dtfj.java">JavaRuntimeMemoryCategory</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJMemoryTagRuntimeMemorySection.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJMemoryTagRuntimeMemorySection.html#getMemoryCategory()">getMemoryCategory</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Iterator.html" title="class or interface in java.util" class="external-link" target="_blank">Iterator</a>&lt;?&gt;</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getMemorySections(boolean)">getMemorySections</a></span>&#8203;(boolean&nbsp;includeFreed)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaMethod.html" title="interface in com.ibm.dtfj.java">JavaMethod</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaStackFrame.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaStackFrame.html#getMethod()">getMethod</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getModifiers()">getModifiers</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#getModifiers()">getModifiers</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaMethod.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaMethod.html#getModifiers()">getModifiers</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getName()">getName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#getName()">getName</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaMethod.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaMethod.html#getName()">getName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObjectMonitor.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObjectMonitor.html#getName()">getName</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getName()">getName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaSystemMonitor.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaSystemMonitor.html#getName()">getName</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getName()">getName</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getObject()">getObject</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaClassloader.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClassloader.html#getObject()">getObject</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getObject()">getObject</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getObjectAtAddress(com.ibm.dtfj.image.ImagePointer)">getObjectAtAddress</a></span>&#8203;(<a href="../ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a>&nbsp;address)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaVMOption.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaVMOption.html#getOptionString()">getOptionString</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="../../java/JavaThread.html" title="interface in com.ibm.dtfj.java">JavaThread</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaObjectMonitor.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObjectMonitor.html#getOwner()">getOwner</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaThread.html" title="interface in com.ibm.dtfj.java">JavaThread</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaSystemMonitor.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaSystemMonitor.html#getOwner()">getOwner</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getPackedDataSize()">getPackedDataSize</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getPersistentHashcode()">getPersistentHashcode</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getPriority()">getPriority</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getProtectionDomain()">getProtectionDomain</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#getReachability()">getReachability</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#getReferenceType()">getReferenceType</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#getRootType()">getRootType</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getShallowAllocations()">getShallowAllocations</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntimeMemoryCategory.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntimeMemoryCategory.html#getShallowBytes()">getShallowBytes</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>short</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getShort(com.ibm.dtfj.java.JavaObject)">getShort</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>short</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getShort(com.ibm.dtfj.java.JavaObject)">getShort</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected char</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#getSigFlag()">getSigFlag</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#getSignature()">getSignature</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaMethod.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaMethod.html#getSignature()">getSignature</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#getSize()">getSize</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#getSource()">getSource</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>long</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getStartTime()">getStartTime</a></span>()</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Return the JVM start time.</div>
+</div>
+<div class="col-first even-row-color"><code>long</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getStartTimeNanos()">getStartTimeNanos</a></span>()</code></div>
+<div class="col-last even-row-color">
+<div class="block">Return the value of the system nanotime (high resolution timer) at JVM start.</div>
+</div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaThread.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaThread.html#getState()">getState</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaFieldInstance.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldInstance.html#getString(com.ibm.dtfj.java.JavaObject)">getString</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaFieldStatic.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaFieldStatic.html#getString(com.ibm.dtfj.java.JavaObject)">getString</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="../../java/JavaClass.html" title="interface in com.ibm.dtfj.java">JavaClass</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#getSuperclass()">getSuperclass</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#getTarget()">getTarget</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link" target="_blank">Object</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getTraceBuffer(java.lang.String,boolean)">getTraceBuffer</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a>&nbsp;arg0,
+ boolean&nbsp;arg1)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link" target="_blank">String</a></code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#getVersion()">getVersion</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaVMInitArgs.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaVMInitArgs.html#getVersion()">getVersion</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>boolean</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaClass.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaClass.html#isArray()">isArray</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaObject.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#isArray()">isArray</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>boolean</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#isClassReference()">isClassReference</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaRuntime.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaRuntime.html#isJITEnabled()">isJITEnabled</a></span>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>boolean</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">DTFJJavaReference.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaReference.html#isObjectReference()">isObjectReference</a></span>()</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected <a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html" title="class in com.ibm.j9ddr.vm29.view.dtfj.java">DTFJJavaObject</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">DTFJJavaField.</span><code><span class="member-name-link"><a href="../../../j9ddr/vm29/view/dtfj/java/DTFJJavaField.html#validateJavaObject(com.ibm.dtfj.java.JavaObject)">validateJavaObject</a></span>&#8203;(<a href="../../java/JavaObject.html" title="interface in com.ibm.dtfj.java">JavaObject</a>&nbsp;object)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="com.ibm.java.diagnostics.utils">
 <h2>Uses of <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a> in <a href="../../../java/diagnostics/utils/package-summary.html">com.ibm.java.diagnostics.utils</a></h2>
 <div class="caption"><span>Methods in <a href="../../../java/diagnostics/utils/package-summary.html">com.ibm.java.diagnostics.utils</a> that throw <a href="../CorruptDataException.html" title="class in com.ibm.dtfj.image">CorruptDataException</a></span></div>
@@ -1675,7 +2254,7 @@ loadScripts(document, 'script');</script>
 </main>
 <footer role="contentinfo">
 <hr>
-<p class="legal-copy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
+<p class="legal-copy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse-openj9/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
 </footer>
 </div>
 </div>
