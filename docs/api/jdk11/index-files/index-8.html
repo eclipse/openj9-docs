@@ -99,6 +99,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">H</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAllButDataUnavailAsCorruptDataException(IProcess, Throwable)</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is not a DataUnavailable.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButMemAccExAndDataUnavailAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAllButMemAccExAndDataUnavailAsCorruptDataException(IProcess, Throwable, Class&lt;?&gt;[])</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is neither MemoryAccessException or DataUnavailable.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAllButMemAccExAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAllButMemAccExAsCorruptDataException(IProcess, Throwable, Class&lt;?&gt;[])</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list 
+ AND especially for this method, if it is not a MemoryAccessException.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsCorruptData(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAsCorruptData(IProcess, Throwable)</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Convert the supplied error condition into a CorruptData object and return 
+ it, typically for insertion into an iterator,
+ or re-throw it if it is an instance of Error that we do not want to 
+ intercept.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable)">handleAsCorruptDataException(IProcess, Throwable)</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Convert the supplied error condition into a corrupt data exception 
+ or re-throw it if it is an instance of Error that we do not want to 
+ intercept.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsCorruptDataException(com.ibm.j9ddr.corereaders.memory.IProcess,java.lang.Throwable,java.lang.Class%5B%5D)">handleAsCorruptDataException(IProcess, Throwable, Class&lt;?&gt;[])</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Go through the standard handleAsCorruptDataException method to convert the supplied error condition 
+ into a corrupt data exception as long as it is not present in the allow list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html#handleAsDataUnavailable(java.lang.Throwable)">handleAsDataUnavailable(Throwable)</a></span> - Static method in class com.ibm.j9ddr.view.dtfj.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/J9DDRDTFJUtils.html" title="class in com.ibm.j9ddr.view.dtfj">J9DDRDTFJUtils</a></dt>
+<dd>
+<div class="block">Handle the supplied error condition and ultimately surface it as a
+ data unavailable exception.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html#handleError(java.lang.Exception)">handleError(Exception)</a></span> - Method in class com.ibm.dtfj.javacore.parser.j9.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html" title="class in com.ibm.dtfj.javacore.parser.j9">SectionParserGrammar</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html#handleError(java.lang.Exception,int)">handleError(Exception, int)</a></span> - Method in class com.ibm.dtfj.javacore.parser.j9.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html" title="class in com.ibm.dtfj.javacore.parser.j9">SectionParserGrammar</a></dt>
@@ -122,12 +163,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Lots of DTFJ methods will throw a standard set of exceptions such as corrupt data
  or data unavailable.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/stackwalker/StackWalkerUtils.html#handleOSlotsCorruption(com.ibm.j9ddr.vm29.j9.stackwalker.WalkState,java.lang.String,java.lang.String,com.ibm.j9ddr.CorruptDataException)">handleOSlotsCorruption(WalkState, String, String, CorruptDataException)</a></span> - Static method in class com.ibm.j9ddr.vm29.j9.stackwalker.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/stackwalker/StackWalkerUtils.html" title="class in com.ibm.j9ddr.vm29.j9.stackwalker">StackWalkerUtils</a></dt>
+<dd>
+<div class="block">Since walking OSlots touches a lot more code than just doing a frame walk, we have a layer of corruption handling
+ just above the o-slots logic.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html#handleRequiredMismatch(java.lang.String,java.lang.String,java.lang.String)">handleRequiredMismatch(String, String, String)</a></span> - Method in class com.ibm.dtfj.javacore.parser.j9.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html" title="class in com.ibm.dtfj.javacore.parser.j9">SectionParserGrammar</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html#handleUnknownMismatch(java.lang.String,java.lang.String)">handleUnknownMismatch(String, String)</a></span> - Method in class com.ibm.dtfj.javacore.parser.j9.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/SectionParserGrammar.html" title="class in com.ibm.dtfj.javacore.parser.j9">SectionParserGrammar</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html#hasAnnotation(java.lang.String)">hasAnnotation(String)</a></span> - Method in class com.ibm.java.diagnostics.utils.plugins.<a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html" title="class in com.ibm.java.diagnostics.utils.plugins">ClassInfo</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasBackwardBranches(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasBackwardBranches(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCObjectModel.html#hasBeenHashed(com.ibm.j9ddr.vm29.pointer.generated.J9ObjectPointer)">hasBeenHashed(J9ObjectPointer)</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCObjectModel.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCObjectModel</a></dt>
+<dd>
+<div class="block">Returns TRUE if an object has been hashed, FALSE otherwise.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/ObjectModel.html#hasBeenHashed(com.ibm.j9ddr.vm29.pointer.generated.J9ObjectPointer)">hasBeenHashed(J9ObjectPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/ObjectModel.html" title="class in com.ibm.j9ddr.vm29.j9">ObjectModel</a></dt>
+<dd>
+<div class="block">Returns TRUE if an object has been hashed, FALSE otherwise.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCObjectModel.html#hasBeenMoved(com.ibm.j9ddr.vm29.pointer.generated.J9ObjectPointer)">hasBeenMoved(J9ObjectPointer)</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCObjectModel.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCObjectModel</a></dt>
+<dd>
+<div class="block">Returns TRUE if an object has been moved after being hashed, FALSE otherwise.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/ObjectModel.html#hasBeenMoved(com.ibm.j9ddr.vm29.pointer.generated.J9ObjectPointer)">hasBeenMoved(J9ObjectPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/ObjectModel.html" title="class in com.ibm.j9ddr.vm29.j9">ObjectModel</a></dt>
+<dd>
+<div class="block">Returns TRUE if an object has been moved after being hashed, FALSE otherwise.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/spi/ISessionContextManager.html#hasChanged()">hasChanged()</a></span> - Method in interface com.ibm.jvm.dtfjview.spi.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/spi/ISessionContextManager.html" title="interface in com.ibm.jvm.dtfjview.spi">ISessionContextManager</a></dt>
 <dd>
 <div class="block">A number of internal operations which could affect the list of currently open
@@ -137,16 +201,46 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/Entry.html#hasChanged(java.io.File)">hasChanged(File)</a></span> - Method in class com.ibm.java.diagnostics.utils.plugins.<a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/Entry.html" title="class in com.ibm.java.diagnostics.utils.plugins">Entry</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasCodeTypeAnnotations(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasCodeTypeAnnotations(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/plugins/DDRInteractiveClassLoader.html#hasCommandIFace(java.lang.Class)">hasCommandIFace(Class&lt;?&gt;)</a></span> - Method in class com.ibm.j9ddr.tools.ddrinteractive.plugins.<a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/plugins/DDRInteractiveClassLoader.html" title="class in com.ibm.j9ddr.tools.ddrinteractive.plugins">DDRInteractiveClassLoader</a></dt>
+<dd>
+<div class="block">Check to see if a class implements the command interface</div>
+</dd>
 <dt><span class="memberNameLink"><a href="../openj9.gpu/com/ibm/gpu/CUDAManager.html#hasCUDASupport()">hasCUDASupport()</a></span> - Method in class com.ibm.gpu.<a href="../openj9.gpu/com/ibm/gpu/CUDAManager.html" title="class in com.ibm.gpu">CUDAManager</a></dt>
 <dd>
 <div class="block">Use this method to identify if CUDA is supported on this machine and
  within this environment: returns true if the number of CUDA devices
  detected is greater than 0.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasDebugInfo(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasDebugInfo(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasDefaultAnnotation(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasDefaultAnnotation(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html#hasEmptyFinalize(com.ibm.j9ddr.vm29.pointer.generated.J9ROMClassPointer)">hasEmptyFinalize(J9ROMClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMClassHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasExceptionInfo(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasExceptionInfo(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasExtendedModifiers(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasExtendedModifiers(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/corereaders/zos/le/Caa.html#hasFailed()">hasFailed()</a></span> - Method in class com.ibm.dtfj.corereaders.zos.le.<a href="../openj9.dtfj/com/ibm/dtfj/corereaders/zos/le/Caa.html" title="class in com.ibm.dtfj.corereaders.zos.le">Caa</a></dt>
 <dd>
 <div class="block">Returns true if this thread failed (ie crashed, abended, has gone to meet its maker).</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/le/Caa.html#hasFailed()">hasFailed()</a></span> - Method in class com.ibm.j9ddr.corereaders.tdump.zebedee.le.<a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/le/Caa.html" title="class in com.ibm.j9ddr.corereaders.tdump.zebedee.le">Caa</a></dt>
+<dd>
+<div class="block">Returns true if this thread failed (ie crashed, abended, has gone to meet its maker).</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html#hasFinalFields(com.ibm.j9ddr.vm29.pointer.generated.J9ROMClassPointer)">hasFinalFields(J9ROMClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMClassHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasGenericSignature(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasGenericSignature(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashFunction.html#hash(StructType)">hash(StructType)</a></span> - Method in interface com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashFunction.html" title="interface in com.ibm.j9ddr.vm29.j9">HashTable.HashFunction</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/JITLook.html#hash_jit_artifact_search(com.ibm.j9ddr.vm29.pointer.generated.J9JITHashTablePointer,com.ibm.j9ddr.vm29.types.UDATA)">hash_jit_artifact_search(J9JITHashTablePointer, UDATA)</a></span> - Static method in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/JITLook.html" title="class in com.ibm.j9ddr.vm29.j9">JITLook</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/AlgorithmVersion.html#HASH_TABLE_VERSION">HASH_TABLE_VERSION</a></span> - Static variable in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/AlgorithmVersion.html" title="class in com.ibm.j9ddr.vm29.j9">AlgorithmVersion</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/image/ImagePointer.html#hashCode()">hashCode()</a></span> - Method in interface com.ibm.dtfj.image.<a href="../openj9.dtfj/com/ibm/dtfj/image/ImagePointer.html" title="interface in com.ibm.dtfj.image">ImagePointer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/image/javacore/JCImagePointer.html#hashCode()">hashCode()</a></span> - Method in class com.ibm.dtfj.image.javacore.<a href="../openj9.dtfj/com/ibm/dtfj/image/javacore/JCImagePointer.html" title="class in com.ibm.dtfj.image.javacore">JCImagePointer</a></dt>
@@ -181,24 +275,70 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/HeapdumpWriter.html#HASHCODE_RANDOMS">HASHCODE_RANDOMS</a></span> - Static variable in class com.ibm.dtfj.phd.parser.<a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/HeapdumpWriter.html" title="class in com.ibm.dtfj.phd.parser">HeapdumpWriter</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/tools/ddrinteractive/commands/HashCodeCommand.html" title="class in com.ibm.j9ddr.vm29.tools.ddrinteractive.commands"><span class="typeNameLink">HashCodeCommand</span></a> - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/tools/ddrinteractive/commands/package-summary.html">com.ibm.j9ddr.vm29.tools.ddrinteractive.commands</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/tools/ddrinteractive/commands/HashCodeCommand.html#%3Cinit%3E()">HashCodeCommand()</a></span> - Constructor for class com.ibm.j9ddr.vm29.tools.ddrinteractive.commands.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/tools/ddrinteractive/commands/HashCodeCommand.html" title="class in com.ibm.j9ddr.vm29.tools.ddrinteractive.commands">HashCodeCommand</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/MonitorTable.html#hashTable">hashTable</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/MonitorTable.html" title="class in com.ibm.j9ddr.vm29.j9">MonitorTable</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.html" title="class in com.ibm.j9ddr.vm29.j9"><span class="typeNameLink">HashTable</span></a>&lt;<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.html" title="type parameter in HashTable">StructType</a> extends <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html" title="class in com.ibm.j9ddr.vm29.pointer">AbstractPointer</a>&gt; - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/package-summary.html">com.ibm.j9ddr.vm29.j9</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.html#%3Cinit%3E(com.ibm.j9ddr.vm29.pointer.generated.J9HashTablePointer,java.lang.Class,com.ibm.j9ddr.vm29.j9.HashTable.HashEqualFunction,com.ibm.j9ddr.vm29.j9.HashTable.HashFunction,com.ibm.j9ddr.vm29.j9.HashTable.HashComparatorFunction)">HashTable(J9HashTablePointer, Class&lt;StructType&gt;, HashTable.HashEqualFunction&lt;StructType&gt;, HashTable.HashFunction&lt;StructType&gt;, HashTable.HashComparatorFunction&lt;StructType&gt;)</a></span> - Constructor for class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.html" title="class in com.ibm.j9ddr.vm29.j9">HashTable</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html" title="class in com.ibm.j9ddr.vm29.j9"><span class="typeNameLink">HashTable_V1</span></a>&lt;<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html" title="type parameter in HashTable_V1">StructType</a> extends <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html" title="class in com.ibm.j9ddr.vm29.pointer">AbstractPointer</a>&gt; - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/package-summary.html">com.ibm.j9ddr.vm29.j9</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html#%3Cinit%3E(com.ibm.j9ddr.vm29.pointer.generated.J9HashTablePointer,boolean,java.lang.Class,com.ibm.j9ddr.vm29.j9.HashTable.HashEqualFunction,com.ibm.j9ddr.vm29.j9.HashTable.HashFunction)">HashTable_V1(J9HashTablePointer, boolean, Class&lt;StructType&gt;, HashTable.HashEqualFunction&lt;StructType&gt;, HashTable.HashFunction&lt;StructType&gt;)</a></span> - Constructor for class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html" title="class in com.ibm.j9ddr.vm29.j9">HashTable_V1</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html#%3Cinit%3E(com.ibm.j9ddr.vm29.pointer.generated.J9HashTablePointer,boolean,java.lang.Class,com.ibm.j9ddr.vm29.j9.HashTable.HashFunction,com.ibm.j9ddr.vm29.j9.HashTable.HashComparatorFunction)">HashTable_V1(J9HashTablePointer, boolean, Class&lt;StructType&gt;, HashTable.HashFunction&lt;StructType&gt;, HashTable.HashComparatorFunction&lt;StructType&gt;)</a></span> - Constructor for class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable_V1.html" title="class in com.ibm.j9ddr.vm29.j9">HashTable_V1</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashEqualFunction.html" title="interface in com.ibm.j9ddr.vm29.j9"><span class="typeNameLink">HashTable.HashEqualFunction</span></a>&lt;<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashEqualFunction.html" title="type parameter in HashTable.HashEqualFunction">StructType</a>&gt; - Interface in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/package-summary.html">com.ibm.j9ddr.vm29.j9</a></dt>
+<dd>
+<div class="block">Encapsulation of the equal function needed by the HashTable</div>
+</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashFunction.html" title="interface in com.ibm.j9ddr.vm29.j9"><span class="typeNameLink">HashTable.HashFunction</span></a>&lt;<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/HashTable.HashFunction.html" title="type parameter in HashTable.HashFunction">StructType</a>&gt; - Interface in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/package-summary.html">com.ibm.j9ddr.vm29.j9</a></dt>
+<dd>
+<div class="block">Encapsulation of the hash function needed by the HashTable</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCJVMTIObjectTagTableIterator.html#hashTableIterator">hashTableIterator</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCJVMTIObjectTagTableIterator.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCJVMTIObjectTagTableIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html#hasInterface(java.lang.Class)">hasInterface(Class&lt;?&gt;)</a></span> - Method in class com.ibm.java.diagnostics.utils.plugins.<a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html" title="class in com.ibm.java.diagnostics.utils.plugins">ClassInfo</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html#hasInterface(java.lang.String)">hasInterface(String)</a></span> - Method in class com.ibm.java.diagnostics.utils.plugins.<a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/plugins/ClassInfo.html" title="class in com.ibm.java.diagnostics.utils.plugins">ClassInfo</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html#hasJDBCNatives(com.ibm.j9ddr.vm29.pointer.generated.J9ROMClassPointer)">hasJDBCNatives(J9ROMClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMClassHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/libraries/CoreFileResolver.html#hasLibraries()">hasLibraries()</a></span> - Method in class com.ibm.j9ddr.libraries.<a href="../openj9.dtfj/com/ibm/j9ddr/libraries/CoreFileResolver.html" title="class in com.ibm.j9ddr.libraries">CoreFileResolver</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/utils/file/ManagedImageSource.html#hasMetaData()">hasMetaData()</a></span> - Method in class com.ibm.dtfj.utils.file.<a href="../openj9.dtfj/com/ibm/dtfj/utils/file/ManagedImageSource.html" title="class in com.ibm.dtfj.utils.file">ManagedImageSource</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasMethodAnnotations(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasMethodAnnotations(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasMethodParameters(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasMethodParameters(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasMethodTypeAnnotations(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasMethodTypeAnnotations(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html#hasModifiedByteCodes(com.ibm.j9ddr.vm29.pointer.generated.J9ROMClassPointer)">hasModifiedByteCodes(J9ROMClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMClassHelper</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/phd/util/NumberStream.html#hasMore()">hasMore()</a></span> - Method in class com.ibm.dtfj.phd.util.<a href="../openj9.dtfj/com/ibm/dtfj/phd/util/NumberStream.html" title="class in com.ibm.dtfj.phd.util">NumberStream</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/stackwalker/MethodMetaData.html#hasMoreInlinedMethods(com.ibm.j9ddr.vm29.pointer.VoidPointer)">hasMoreInlinedMethods(VoidPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.j9.stackwalker.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/stackwalker/MethodMetaData.html" title="class in com.ibm.j9ddr.vm29.j9.stackwalker">MethodMetaData</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/spi/ISessionContextManager.html#hasMultipleContexts()">hasMultipleContexts()</a></span> - Method in interface com.ibm.jvm.dtfjview.spi.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/spi/ISessionContextManager.html" title="interface in com.ibm.jvm.dtfjview.spi">ISessionContextManager</a></dt>
 <dd>
 <div class="block">Convenience method for determining if more than one context is currently open.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/MonitorTableListIterator.html#hasNext()">hasNext()</a></span> - Method in class com.ibm.j9ddr.vm29.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/MonitorTableListIterator.html" title="class in com.ibm.j9ddr.vm29.j9">MonitorTableListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalker.html#hasNext()">hasNext()</a></span> - Method in class com.ibm.j9ddr.vm29.j9.walkers.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalker.html" title="class in com.ibm.j9ddr.vm29.j9.walkers">HeapWalker</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/heapdump/ReferenceIterator.html#hasNext()">hasNext()</a></span> - Method in interface com.ibm.jvm.dtfjview.heapdump.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/heapdump/ReferenceIterator.html" title="interface in com.ibm.jvm.dtfjview.heapdump">ReferenceIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/phd/util/LongEnumeration.html#hasNumberOfElements()">hasNumberOfElements()</a></span> - Method in interface com.ibm.dtfj.phd.util.<a href="../openj9.dtfj/com/ibm/dtfj/phd/util/LongEnumeration.html" title="interface in com.ibm.dtfj.phd.util">LongEnumeration</a></dt>
 <dd>
 <div class="block">Returns <tt>true</tt> if this enumeration supports the <a href="../openj9.dtfj/com/ibm/dtfj/phd/util/LongEnumeration.html#numberOfElements()"><code>LongEnumeration.numberOfElements()</code></a> method.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasParameterAnnotations(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasParameterAnnotations(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/DTFJContext.html#hasPropertyBeenSet(java.lang.String)">hasPropertyBeenSet(String)</a></span> - Method in class com.ibm.java.diagnostics.utils.<a href="../openj9.dtfj/com/ibm/java/diagnostics/utils/DTFJContext.html" title="class in com.ibm.java.diagnostics.utils">DTFJContext</a></dt>
 <dd>
 <div class="block">Used to determine if a property has been set in the context property
@@ -209,17 +349,47 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Used to determine if a property has been set in the context property
  bag, and that the value of that property is TRUE</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasStackMap(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasStackMap(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/StructureReader.html#hasStructure(java.lang.String)">hasStructure(String)</a></span> - Method in class com.ibm.j9ddr.<a href="../openj9.dtfj/com/ibm/j9ddr/StructureReader.html" title="class in com.ibm.j9ddr">StructureReader</a></dt>
+<dd>
+<div class="block">Test to see if a structure has been read in and hence available</div>
+</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/framework/tag/ITagManager.html#hasTag(java.lang.String)">hasTag(String)</a></span> - Method in interface com.ibm.dtfj.javacore.parser.framework.tag.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/framework/tag/ITagManager.html" title="interface in com.ibm.dtfj.javacore.parser.framework.tag">ITagManager</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/framework/tag/ITagParser.html#hasTag(java.lang.String)">hasTag(String)</a></span> - Method in interface com.ibm.dtfj.javacore.parser.framework.tag.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/framework/tag/ITagParser.html" title="interface in com.ibm.dtfj.javacore.parser.framework.tag">ITagParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/J9TagManager.html#hasTag(java.lang.String)">hasTag(String)</a></span> - Method in class com.ibm.dtfj.javacore.parser.j9.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/J9TagManager.html" title="class in com.ibm.dtfj.javacore.parser.j9">J9TagManager</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/dumpreader/SystemTrace.Entry.html#hasTimestamp()">hasTimestamp()</a></span> - Method in class com.ibm.j9ddr.corereaders.tdump.zebedee.dumpreader.<a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/dumpreader/SystemTrace.Entry.html" title="class in com.ibm.j9ddr.corereaders.tdump.zebedee.dumpreader">SystemTrace.Entry</a></dt>
+<dd>
+<div class="block">Return true of this entry has its own timestamp.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ClassHelper.html#hasValidEyeCatcher(com.ibm.j9ddr.vm29.pointer.generated.J9ClassPointer)">hasValidEyeCatcher(J9ClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ClassHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapRegionDescriptor.html#hasValidMarkMap()">hasValidMarkMap()</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapRegionDescriptor.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCHeapRegionDescriptor</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/MM_HeapRegionDescriptorHelper.html#hasValidMarkMap(com.ibm.j9ddr.vm29.pointer.generated.MM_HeapRegionDescriptorPointer)">hasValidMarkMap(MM_HeapRegionDescriptorPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/MM_HeapRegionDescriptorHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">MM_HeapRegionDescriptorHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html#hasVerifyData(com.ibm.j9ddr.vm29.pointer.generated.J9ROMClassPointer)">hasVerifyData(J9ROMClassPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMClassHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMClassHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html#hasVTable(com.ibm.j9ddr.vm29.pointer.generated.J9ROMMethodPointer)">hasVTable(J9ROMMethodPointer)</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ROMMethodHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ROMMethodHelper</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCOwnableSynchronizerObjectListIterator.html#head">head</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCOwnableSynchronizerObjectListIterator.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCOwnableSynchronizerObjectListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCUnfinalizedObjectListIterator.html#head">head</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCUnfinalizedObjectListIterator.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCUnfinalizedObjectListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/macho/MachoDumpReader.MachFile64.html#header">header</a></span> - Variable in class com.ibm.j9ddr.corereaders.macho.<a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/macho/MachoDumpReader.MachFile64.html" title="class in com.ibm.j9ddr.corereaders.macho">MachoDumpReader.MachFile64</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.traceformat/com/ibm/jvm/format/TraceFormat.html#header">header</a></span> - Static variable in class com.ibm.jvm.format.<a href="../openj9.traceformat/com/ibm/jvm/format/TraceFormat.html" title="class in com.ibm.jvm.format">TraceFormat</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.traceformat/com/ibm/jvm/format/TraceRecord.html#headerSize">headerSize</a></span> - Variable in class com.ibm.jvm.format.<a href="../openj9.traceformat/com/ibm/jvm/format/TraceRecord.html" title="class in com.ibm.jvm.format">TraceRecord</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ObjectHelper.html#headerSize()">headerSize()</a></span> - Static method in class com.ibm.j9ddr.vm29.pointer.helper.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/helper/J9ObjectHelper.html" title="class in com.ibm.j9ddr.vm29.pointer.helper">J9ObjectHelper</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.traceformat/com/ibm/jvm/format/TraceFormat.html#headings">headings</a></span> - Static variable in class com.ibm.jvm.format.<a href="../openj9.traceformat/com/ibm/jvm/format/TraceFormat.html" title="class in com.ibm.jvm.format">TraceFormat</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html#heap">heap</a></span> - Variable in class com.ibm.j9ddr.vm29.view.dtfj.java.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/DTFJJavaObject.html" title="class in com.ibm.j9ddr.vm29.view.dtfj.java">DTFJJavaObject</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/heapdump/HeapDumpSettings.html#HEAP_DUMP_FILE_PROPERTY">HEAP_DUMP_FILE_PROPERTY</a></span> - Static variable in class com.ibm.jvm.dtfjview.heapdump.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/heapdump/HeapDumpSettings.html" title="class in com.ibm.jvm.dtfjview.heapdump">HeapDumpSettings</a></dt>
 <dd>&nbsp;</dd>
@@ -275,6 +445,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Unknown heap root type</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCCardTable.html#heapAddrToCardAddr(com.ibm.j9ddr.vm29.pointer.VoidPointer)">heapAddrToCardAddr(VoidPointer)</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCCardTable.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCCardTable</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.jvm/com/ibm/jvm/Dump.html#HeapDump()">HeapDump()</a></span> - Static method in class com.ibm.jvm.<a href="../openj9.jvm/com/ibm/jvm/Dump.html" title="class in com.ibm.jvm">Dump</a></dt>
 <dd>
 <div class="block">Trigger a heap dump.</div>
@@ -333,6 +505,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/HeapdumpWriter.html#%3Cinit%3E(java.lang.String)">HeapdumpWriter(String)</a></span> - Constructor for class com.ibm.dtfj.phd.parser.<a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/HeapdumpWriter.html" title="class in com.ibm.dtfj.phd.parser">HeapdumpWriter</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapLinkedFreeHeader.html#heapLinkedFreeHeaderPointer">heapLinkedFreeHeaderPointer</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapLinkedFreeHeader.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCHeapLinkedFreeHeader</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/j9/HeapObjectIterator.html" title="class in com.ibm.j9ddr.vm29.view.dtfj.java.j9"><span class="typeNameLink">HeapObjectIterator</span></a> - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/j9/package-summary.html">com.ibm.j9ddr.vm29.view.dtfj.java.j9</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/j9/HeapObjectIterator.html#%3Cinit%3E(com.ibm.j9ddr.vm29.view.dtfj.java.DTFJJavaHeap,com.ibm.j9ddr.vm29.j9.gc.GCHeapRegionDescriptor)">HeapObjectIterator(DTFJJavaHeap, GCHeapRegionDescriptor)</a></span> - Constructor for class com.ibm.j9ddr.vm29.view.dtfj.java.j9.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/view/dtfj/java/j9/HeapObjectIterator.html" title="class in com.ibm.j9ddr.vm29.view.dtfj.java.j9">HeapObjectIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapRegionDescriptor.html#heapRegionDescriptor">heapRegionDescriptor</a></span> - Variable in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCHeapRegionDescriptor.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCHeapRegionDescriptor</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalker.html" title="class in com.ibm.j9ddr.vm29.j9.walkers"><span class="typeNameLink">HeapWalker</span></a> - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/package-summary.html">com.ibm.j9ddr.vm29.j9.walkers</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalker.html#%3Cinit%3E(com.ibm.j9ddr.vm29.pointer.generated.J9JavaVMPointer,com.ibm.j9ddr.vm29.j9.gc.GCHeapRegionDescriptor,com.ibm.j9ddr.vm29.j9.walkers.HeapWalkerEvents)">HeapWalker(J9JavaVMPointer, GCHeapRegionDescriptor, HeapWalkerEvents)</a></span> - Constructor for class com.ibm.j9ddr.vm29.j9.walkers.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalker.html" title="class in com.ibm.j9ddr.vm29.j9.walkers">HeapWalker</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/HeapWalkerEvents.html" title="interface in com.ibm.j9ddr.vm29.j9.walkers"><span class="typeNameLink">HeapWalkerEvents</span></a> - Interface in <a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/walkers/package-summary.html">com.ibm.j9ddr.vm29.j9.walkers</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/CmdFileTool.html#HELP_DESCRIPTION">HELP_DESCRIPTION</a></span> - Static variable in class com.ibm.jvm.dtfjview.tools.impl.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/CmdFileTool.html" title="class in com.ibm.jvm.dtfjview.tools.impl">CmdFileTool</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/GrepTool.html#HELP_DESCRIPTION">HELP_DESCRIPTION</a></span> - Static variable in class com.ibm.jvm.dtfjview.tools.impl.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/GrepTool.html" title="class in com.ibm.jvm.dtfjview.tools.impl">GrepTool</a></dt>
@@ -372,15 +558,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/section/common/CommonPatternMatchers.html#hex_0x">hex_0x</a></span> - Static variable in class com.ibm.dtfj.javacore.parser.j9.section.common.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/section/common/CommonPatternMatchers.html" title="class in com.ibm.dtfj.javacore.parser.j9.section.common">CommonPatternMatchers</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/CommandUtils.html#HEX_SUFFIX">HEX_SUFFIX</a></span> - Static variable in class com.ibm.j9ddr.tools.ddrinteractive.<a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/CommandUtils.html" title="class in com.ibm.j9ddr.tools.ddrinteractive">CommandUtils</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/section/common/CommonPatternMatchers.html#hexadecimal">hexadecimal</a></span> - Static variable in class com.ibm.dtfj.javacore.parser.j9.section.common.<a href="../openj9.dtfj/com/ibm/dtfj/javacore/parser/j9/section/common/CommonPatternMatchers.html" title="class in com.ibm.dtfj.javacore.parser.j9.section.common">CommonPatternMatchers</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html#hexAt(long)">hexAt(long)</a></span> - Method in class com.ibm.j9ddr.vm29.pointer.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html" title="class in com.ibm.j9ddr.vm29.pointer">AbstractPointer</a></dt>
+<dd>
+<div class="block">This method returns the memory values at the given index.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html#hexAt(com.ibm.j9ddr.vm29.types.Scalar)">hexAt(Scalar)</a></span> - Method in class com.ibm.j9ddr.vm29.pointer.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/pointer/AbstractPointer.html" title="class in com.ibm.j9ddr.vm29.pointer">AbstractPointer</a></dt>
+<dd>
+<div class="block">This method returns the memory values at the given index.</div>
+</dd>
 <dt><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/HexdumpCommand.html" title="class in com.ibm.jvm.dtfjview.commands"><span class="typeNameLink">HexdumpCommand</span></a> - Class in <a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/package-summary.html">com.ibm.jvm.dtfjview.commands</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/HexdumpCommand.html#%3Cinit%3E()">HexdumpCommand()</a></span> - Constructor for class com.ibm.jvm.dtfjview.commands.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/HexdumpCommand.html" title="class in com.ibm.jvm.dtfjview.commands">HexdumpCommand</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/BaseJdmpviewCommand.html#hexfmt">hexfmt</a></span> - Variable in class com.ibm.jvm.dtfjview.commands.<a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/commands/BaseJdmpviewCommand.html" title="class in com.ibm.jvm.dtfjview.commands">BaseJdmpviewCommand</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/commands/LookupSymbolCommand.html#hexformat">hexformat</a></span> - Variable in class com.ibm.j9ddr.tools.ddrinteractive.commands.<a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/commands/LookupSymbolCommand.html" title="class in com.ibm.j9ddr.tools.ddrinteractive.commands">LookupSymbolCommand</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/commands/NativeLibrariesCommand.html#hexformat">hexformat</a></span> - Variable in class com.ibm.j9ddr.tools.ddrinteractive.commands.<a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/commands/NativeLibrariesCommand.html" title="class in com.ibm.j9ddr.tools.ddrinteractive.commands">NativeLibrariesCommand</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/PrintHeapdump.html#hexpad(long)">hexpad(long)</a></span> - Static method in class com.ibm.dtfj.phd.parser.<a href="../openj9.dtfj/com/ibm/dtfj/phd/parser/PrintHeapdump.html" title="class in com.ibm.dtfj.phd.parser">PrintHeapdump</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCMemoryPoolAddressOrderedList.html#hintIterator()">hintIterator()</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCMemoryPoolAddressOrderedList.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCMemoryPoolAddressOrderedList</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCMemoryPoolSplitAddressOrderedList.html#hintIterator()">hintIterator()</a></span> - Method in class com.ibm.j9ddr.vm29.j9.gc.<a href="../openj9.dtfj/com/ibm/j9ddr/vm29/j9/gc/GCMemoryPoolSplitAddressOrderedList.html" title="class in com.ibm.j9ddr.vm29.j9.gc">GCMemoryPoolSplitAddressOrderedList</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/HistoryTool.html" title="class in com.ibm.jvm.dtfjview.tools.impl"><span class="typeNameLink">HistoryTool</span></a> - Class in <a href="../openj9.dtfjview/com/ibm/jvm/dtfjview/tools/impl/package-summary.html">com.ibm.jvm.dtfjview.tools.impl</a></dt>
 <dd>&nbsp;</dd>
@@ -398,6 +602,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">This error indicates that the pointer passed to ::cudaHostUnregister()
  does not correspond to any currently registered memory region.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/image/J9RASImageDataFactory.MachineData.html#hostName()">hostName()</a></span> - Method in interface com.ibm.j9ddr.view.dtfj.image.<a href="../openj9.dtfj/com/ibm/j9ddr/view/dtfj/image/J9RASImageDataFactory.MachineData.html" title="interface in com.ibm.j9ddr.view.dtfj.image">J9RASImageDataFactory.MachineData</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="../jdk.management/com/sun/management/HotSpotDiagnosticMXBean.html" title="interface in com.sun.management"><span class="typeNameLink">HotSpotDiagnosticMXBean</span></a> - Interface in <a href="../jdk.management/com/sun/management/package-summary.html">com.sun.management</a></dt>
 <dd>
 <div class="block">Stub to compile OpenJDK diagnostic management, see <a href="../jdk.management/openj9/lang/management/package-summary.html"><code>openj9.lang.management</code></a> and <a href="../jdk.management/com/ibm/lang/management/package-summary.html"><code>com.ibm.lang.management</code></a> packages instead.</div>
@@ -405,6 +611,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="../openj9.traceformat/com/ibm/jvm/format/Util.html#HOURS2DAYS">HOURS2DAYS</a></span> - Static variable in class com.ibm.jvm.format.<a href="../openj9.traceformat/com/ibm/jvm/format/Util.html" title="class in com.ibm.jvm.format">Util</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="../openj9.traceformat/com/ibm/jvm/trace/format/api/TraceContext.html#HOURS2DAYS">HOURS2DAYS</a></span> - Static variable in class com.ibm.jvm.trace.format.api.<a href="../openj9.traceformat/com/ibm/jvm/trace/format/api/TraceContext.html" title="class in com.ibm.jvm.trace.format.api">TraceContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/dumpreader/SystemTrace.html#HSCH">HSCH</a></span> - Static variable in class com.ibm.j9ddr.corereaders.tdump.zebedee.dumpreader.<a href="../openj9.dtfj/com/ibm/j9ddr/corereaders/tdump/zebedee/dumpreader/SystemTrace.html" title="class in com.ibm.j9ddr.corereaders.tdump.zebedee.dumpreader">SystemTrace</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/Humanize.html" title="class in com.ibm.j9ddr.tools.ddrinteractive"><span class="typeNameLink">Humanize</span></a> - Class in <a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/package-summary.html">com.ibm.j9ddr.tools.ddrinteractive</a></dt>
+<dd>
+<div class="block">Utility class for converting a value to a human-readable form.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/Humanize.html#%3Cinit%3E()">Humanize()</a></span> - Constructor for class com.ibm.j9ddr.tools.ddrinteractive.<a href="../openj9.dtfj/com/ibm/j9ddr/tools/ddrinteractive/Humanize.html" title="class in com.ibm.j9ddr.tools.ddrinteractive">Humanize</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="../jdk.management/com/ibm/virtualization/management/HypervisorInfoRetrievalException.html" title="class in com.ibm.virtualization.management"><span class="typeNameLink">HypervisorInfoRetrievalException</span></a> - Exception in <a href="../jdk.management/com/ibm/virtualization/management/package-summary.html">com.ibm.virtualization.management</a></dt>
 <dd>
@@ -474,7 +688,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
 </nav>
-<p class="legalCopy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
+<p class="legalCopy"><small><a href="https://www.eclipse.org/openj9/" target="_blank">Eclipse OpenJ9 website.</a><br> To raise a bug report or suggest an improvement create an <a href="https://github.com/eclipse-openj9/openj9/issues" target="_blank">Eclipse Openj9 issue.</a><br> Copyright &copy; 1998, 2021, IBM Corp. and others.</small></p>
 </footer>
 </body>
 </html>
