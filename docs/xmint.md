@@ -39,8 +39,8 @@ Sets the minimum and maximum proportion of time to spend in the garbage collecti
 
 | Setting        | Effect                 | Default |
 |----------------|------------------------|---------|
-|`-Xmint<value>` | Set minimum time in GC | 5       |
-|`-Xmaxt<value>` | Set maximum time in GC | 13      |
+|`-Xmint<value>` | Set minimum time in GC | 0.05       |
+|`-Xmaxt<value>` | Set maximum time in GC | 0.13      |
 
 For the `gencon` GC policy, the values apply only to the tenure part of the heap. For the `balanced`, `optthruput`, and `optavgpause` GC policies, these values apply to the whole heap. This option cannot be used with the metronome GC policy (`-Xgcpolicy:metronome`) because the heap is always fully expanded.
 
